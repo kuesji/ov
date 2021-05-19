@@ -143,7 +143,8 @@ def load(data):
 					current, value = 0, ""
 				else:
 					value += char
-		else:
+
+		if current == 0:
 			if char == "_" or char.isalpha():
 				current, value = type_name, char
 			elif char in ("-","+") or char.isnumeric():
