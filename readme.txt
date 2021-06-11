@@ -7,15 +7,6 @@
   by parser. 
 
   types:
-   - name:
-     can consist of utf8 alphanumeric characters and underscore.
-
-		 for example:
-		   person
-		   person12
-		   p1rs0n
-		   __xpersonx__
-
    - number:
      number type for all of kind of numbers.
      can consist of natural numbers and hexadecimal numbers and one minus 
@@ -35,7 +26,7 @@
   - string:
     everything between quotes is string 
     for example:
-    	alias "kuesji koesnu"
+    	"kuesji koesnu"
 
     alias is name and kuesji koesnu is string in here.
     yes, we need a way to escape symbol if we want to use quote in string.
@@ -56,10 +47,8 @@
     arrays not sorted by default.
     content is separated by space.
 
-		for example:
+    for example:
       [ 1 2 3 4 5 ]
-     or
-      [ red green blue ]
      or
       [ "house of red" "forest of green" "lake of blue" ]
 
@@ -72,7 +61,7 @@
 
     for example:
       {
-         name "kuesji koesnu"
-         username kuesji
-         groups [ 12 48 31 72 ]
+         "name" "kuesji koesnu"
+         "username" "kuesji"
+         "groups" [ 12 48 31 72 ]
       }
